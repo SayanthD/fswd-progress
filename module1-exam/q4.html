@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function checkNum() {
+                        var inp = document.getElementById('inp1').value;
+                        var numRegex = /^[0-9]+$/;
+
+                        if (inp.match(numRegex)) {
+                                alert("This is a number");
+                        }
+                        else {
+                                alert("This is non a number");
+                        }
+                };
+        </script>
+</head>
+<body>
+        <form>
+                Enter your input here: <input type="text" id="inp1" placeholder="numeric value">
+                <br />
+                <input type="button" value="Check" onclick="checkNum()">
+        </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>$(document).ready(function(){
+                $("#btn1").click(function(){
+                        $num1 = parseInt($("#num1").val());
+                        $num2 = parseInt($("#num2").val());
+                        $answer = $num1 + $num2;         
+                        $("#ans").val($answer); 
+                });
+                $("#btn2").click(function(){
+                        $num1 = parseInt($("#num1").val());
+                        $num2 = parseInt($("#num2").val());
+                        $answer = $num1 - $num2;         
+                        $("#ans").val($answer); 
+                });
+                $("#btn3").click(function(){
+                        $num1 = parseInt($("#num1").val());
+                        $num2 = parseInt($("#num2").val());
+                        $answer = $num1 * $num2;         
+                        $("#ans").val($answer); 
+                });
+                $("#btn4").click(function(){
+                        $num1 = parseInt($("#num1").val());
+                        $num2 = parseInt($("#num2").val());
+                        $answer = $num1 / $num2;         
+                        $("#ans").val($answer); 
+                });
+                
+        });
+        </script>
+</head>
+<body>
+        <form>
+       <h2>Simple calculator</h2>
+       Enter first number: <input type="text" id="num1">
+       <br />
+       Enter second number: <input type="text" id="num2">
+       <br />
+       <input type="button" id="btn1" value="Add">
+       <input type="button" id="btn2" value="Subtract">
+       <input type="button" id="btn3" value="Multiply">
+       <input type="button" id="btn4" value="Divide">
+       <br />
+       Result: <input type="text" id="ans">
+</form>
+</body>
+</html>
