@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+
+                function myfunc_calc() {
+                        var a = parseInt(document.getElementById("txt1").value);
+                        var b = parseInt(document.getElementById("txt2").value);
+                        var operation = document.getElementById("operation").value;
+                        if (operation == "add") {
+                                var result = a + b;
+                                var symb = " + "
+                        }
+                        else if (operation == "sub") {
+                                var result = a - b;
+                                var symb = " - "
+                        }
+                        else if (operation == "mult") {
+                                var result = a * b;
+                                var symb = " x "
+                        }
+                        else {
+                                var result = a / b;
+                                var symb = " / "
+                        }
+
+                        document.getElementById("ans").innerHTML = "The answer: " + a + symb + b + " = " + result;
+                }
+        </script>
+</head>
+<body>
+        <form>
+                Enter first value <input id="txt1" type="text"><br /> 
+                Enter second value <input id="txt2" type="text">
+
+                <select id="operation">
+                        <option value="add">Add</option>
+                        <option value="sub">Sub</option>
+                        <option value="mult">Multiply</option>
+                        <option value="div">Divide</option>
+                </select>
+
+                <input type="button" value="Calculate" onclick="myfunc_calc()">
+                
+                <h4 id="ans"></h4>
+        </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script>
+                function myfun() {
+                        var n = document.getElementsByName("button").value;
+                        alert(n);
+                }
+                </script>
+
+</head>
+
+<body>
+        <form>
+                <div class="container">
+                        <div class="form-group">
+                                <label for="display">Display: </label>
+                                <input type="text" name="" id="display" class="form-control">
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-1">
+                                        <button class="btn btn-default" onclick="myfun()" value="7">7</button>
+                                </div>
+                                <div class="col-sm-1">
+                                        <button class="btn btn-default">8</button>
+                                </div>
+                                <div class="col-sm-1">
+                                        <button class="btn btn-default">9</button>
+                                </div>
+                        </div>
+                </div>
+        </form>
+</body>
+
+</html>

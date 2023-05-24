@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+                function checkNum(elem, msg) {
+
+                        var num = /^[0-9]+$/;
+                        if(elem.value.match(num)) {
+                                alert("this is a number");
+                        }
+                        else {
+                                alert(msg);
+                                elem.focus();
+                        }
+                }
+        </script>
+</head>
+<body>
+        <form>
+                Phone number <input type="text" id="txtno">
+                <input type="button" value="validate" onclick="checkNum(document.getElementById('txtno'), 'Numbers only')">
+        </form>
+</body>
+</html>

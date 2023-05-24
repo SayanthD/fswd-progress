@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function myfunc_load() {
+                        alert("body loaded");
+                }
+
+                function myfunc_changed() {
+                        alert("changed");
+                }
+
+                function myfunc_clicked() {
+                        alert("clicked");
+                }
+
+                function myfunc_mouseover() {
+                        alert("mouseover");
+                }
+
+                function myfunc_mouseout() {
+                        alert("mouseout");
+                }
+
+                function myfunc_keydown() {
+                        alert("keydown");
+                }
+        </script>
+</head>
+<body onload="myfunc_load()">
+        <form>
+                Name <input type="text" onchange="myfunc_changed()" onmouseout="myfunc_mouseout()" onkeydown="myfunc_keydown()" placeholder="Enter your name">
+                <input type="button" value="Click me" onclick="myfunc_clicked()">
+                <p onmouseover="myfunc_mouseover()">nothing</p>
+        </form>
+</body>
+</html>

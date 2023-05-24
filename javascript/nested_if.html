@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+                function checkNum() {
+                var a = parseInt(document.getElementById("n1").value);
+                var b = parseInt(document.getElementById("n2").value);
+                var c = parseInt(document.getElementById("n3").value);
+
+                if (a>b) {
+                        if (a>c) {
+                                alert(a + " is the largest");
+                        }
+                        else {
+                                alert(c + " is the largest");
+                        }
+                }
+                else if (b>c) {
+                        alert(b + " is the largest");
+                }
+                else {
+                        alert(c + " is the largest");
+                }
+        }
+        </script>
+</head>
+<body>
+        <form>
+                <h2>Check largest among the three numbers</h2>
+                Enter a: <input type="text" id="n1"> <br />
+                Enter b: <input type="text" id="n2"> <br />
+                Enter c: <input type="text" id="n3"> <br />
+                <input type="button" value="check" onclick="checkNum()">
+        </form>
+</body>
+</html>

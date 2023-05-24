@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+                function checkLet(elem, msg) {
+
+                        var num = /^[a-zA-Z]+$/;
+                        if(elem.value.match(num)) {
+                                alert("this is a letter");
+                        }
+                        else {
+                                alert(msg);
+                                elem.focus();
+                        }
+                }
+        </script>
+</head>
+<body>
+        <form>
+                Letters only <input type="text" id="txtno">
+                <input type="button" value="validate" onclick="checkLet(document.getElementById('txtno'), 'Letters only')">
+        </form>
+</body>
+</html>

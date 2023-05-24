@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function restri(elem, min, max) {
+                        var elem_len = elem.value.length;
+                        if (elem_len >= min & elem_len <= max) {
+                                alert("value is between " + min + " and " + max + " characters");
+                        }
+                        else {
+                                alert("please enter characters between " + min + " and " + max + " length");
+                                elem.focus();
+                        }
+                }
+        </script>
+</head>
+<body>
+        <form>
+                Password <input type="text" id="txtno">
+                <input type="button" value="click" onclick="restri(document.getElementById('txtno'), 6, 8)">
+        </form>
+</body>
+</html>

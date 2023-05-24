@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function searchStr() {
+                var full_str = document.getElementById("txtbox").value;
+                var search_item = document.getElementById("s_item").value;
+
+                var pos = full_str.search(search_item);
+
+                if (pos >= 0) {
+                        document.write("The string was found at position: " + pos);
+                }
+                else {
+                        document.write("There was no match");
+                }}
+
+        </script>
+</head>
+
+<body>
+        <form>
+                Enter full string <textarea rows="4" cols="50" name="" id="txtbox"></textarea><br />
+                Enter text to search <input type="text" name="" id="s_item"><br />
+                <input type="button" value="search" onclick="searchStr()">
+        </form>
+</body>
+
+</html>

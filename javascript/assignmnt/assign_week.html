@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function Week() {
+                        var num = parseInt(document.getElementById("num").value);
+                        if (num == 1) {
+                                alert("Sunday");
+                        }
+                        else if (num == 2) {
+                                alert("Monday");
+                        }
+                        else if (num == 3) {
+                                alert("Tuesday");
+                        }
+                        else if (num == 4) {
+                                alert("Wednesday");
+                        }
+                        else if (num == 5) {
+                                alert("Thursday");
+                        }
+                        else if (num == 6) {
+                                alert("Friday");
+                        }
+                        else if (num == 7) {
+                                alert("Saturday");
+                        }
+                        else {
+                                alert("Invalid number");
+                        }
+                }
+        </script>
+</head>
+<body>
+        <h2>Check weekname with a number</h2>
+        <form>
+                Enter a number <input type="text" id="num">
+                <input type="button" value="Check" onclick="Week()">
+        </form>
+
+        
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function myfunc() {
+                        var a = document.getElementById("txtname").value;
+                        document.getElementById("ptag").innerHTML = "your name is " + a;
+                }
+        </script>
+</head>
+<body>
+        <form>
+        Name <input type="text" id="txtname" placeholder="Enter your name here">
+        <input type="button" value="click here" onclick="myfunc()">
+        <p id="ptag">something</p>
+</form>
+
+</body>
+</html>

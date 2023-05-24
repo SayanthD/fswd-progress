@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function marklist() {
+                        var sub1 = parseInt(document.getElementById("sub1").value);
+                        var sub2 = parseInt(document.getElementById("sub2").value);
+                        var sub3 = parseInt(document.getElementById("sub3").value);
+
+                        var total = sub1 + sub2 + sub3;
+
+                        if (total>=150) {
+                                alert("You have a total mark of " + total + "!. You are PASSED!!")
+                        }
+                        else {
+                                alert("You have a total mark of " + total + "!. You are FAILED!!")
+                        }
+                }
+        </script>
+</head>
+<body>
+        <h2>Check your marks</h2>
+        <form>
+                Enter your subject1 mark <input type="text" id="sub1"><br />
+                Enter your subject2 mark <input type="text" id="sub2"><br />
+                Enter your subject3 mark <input type="text" id="sub3"><br />
+                <input type="button" value="check" onclick="marklist()">
+        </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+                function switchNum() {
+                        var num = parseInt(document.getElementById("n1").value);
+                        switch (num) {
+                                case 1:
+                                        document.getElementById("txt1").value = "one";
+                                        break
+                                case 2:
+                                        document.getElementById("txt1").value = "two";
+                                        break
+                                case 3:
+                                        document.getElementById("txt1").value = "three";
+                                        break
+                                default:
+                                        document.getElementById("txt1").value = "wrong";
+                        }
+                }
+        </script>
+</head>
+<body>
+        <form>
+                Enter 1, 2 or 3 <input type="text" id="n1"> 
+                <input type="button" value="check" onclick="switchNum()"><br />
+                <input type="text" id="txt1">
+        </form>
+</body>
+</html>

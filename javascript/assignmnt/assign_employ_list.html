@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function findNetsalary() {
+                        var salary = parseInt(document.getElementById("salary").value);
+                        if (salary >= 25000) {
+                                var netSalary = salary + (0.15 * salary) + (0.13 * salary) - (0.12 * salary);
+                        }
+                        else if (salary >= 20000) {
+                                var netSalary = salary + (0.12 * salary) + (0.10 * salary) - (0.11 * salary);
+                        }
+                        else {
+                                var netSalary = salary + (0.08 * salary) + (0.07 * salary) - (0.09 * salary);
+                        }
+                        alert("Your netsalary is " + parseInt(netSalary));
+                }
+        </script>
+</head>
+<body>
+        <h2>Check Netsalary</h2>
+        <form>
+                Enter your basic salary <input type="text" id="salary">
+                <input type="button" value="Check" onclick="findNetsalary()">
+        </form>
+</body>
+</html>

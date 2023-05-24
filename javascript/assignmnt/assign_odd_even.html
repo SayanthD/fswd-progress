@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function odd_or_even() {
+                        var num = parseInt(document.getElementById("num").value);
+                        if(num%2==0) {
+                                alert("The number is even");
+                        }
+                        else {
+                                alert("The number is odd");
+                        }
+                }
+        </script>
+</head>
+<body>
+        <h2>Check whether a number is odd or even</h2>
+        <form>
+                Enter a number <input type="text" id="num">
+                <input type="button" value="check" onclick="odd_or_even()">
+        </form>
+</body>
+</html>

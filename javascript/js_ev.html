@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function myfunc_ans() {
+                        var a = parseInt(document.getElementById("txt1").value);
+                        var b = parseInt(document.getElementById("txt2").value);
+                        var c = a + b;
+                        var d = "The answer: " + a + " + " + b + " = " + c;
+                        document.getElementById("ans").innerHTML = d;
+                        alert(d)
+                }
+        </script>
+</head>
+
+<body>
+        <form>
+                Enter first value <input type="text" id="txt1">
+                <br />
+                Enter second value <input type="text" id="txt2">
+
+                <input type="button" value="calculate" onclick="myfunc_ans()">
+
+                <h4 id="ans"></h4>
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function checkNum() {
+                        var num = parseInt(document.getElementById("txtname").value);
+
+                        if (num>0) {
+                                alert("Positive number");
+                        }
+                        else if(num<0) {
+                                alert("Negative number");
+                        }
+                        else if(num==0) {
+                                alert("You entered ZERO");
+                        }
+                        else {
+                                alert("you entered an invalid character");
+                        }
+                }
+        </script>
+</head>
+<body>
+        <form>
+                Enter a number <input type="text" id="txtname">
+                <input type="button" value="Calculate" onclick="checkNum()">
+        </form>
+</body>
+</html>

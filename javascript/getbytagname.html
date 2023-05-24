@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function myfunc() {
+                        document.getElementsByTagName("h2")[0].innerHTML = "text inside first h2 tag";
+                        document.getElementsByTagName("h2")[1].innerHTML = "text inside second h2 tag";
+                }
+        </script>
+
+</head>
+<body onload="myfunc()">
+        <h2></h2>
+        <h2></h2>
+</body>
+</html>

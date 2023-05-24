@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+                function generateGrade() {
+                        var grade = parseInt(document.getElementById("grade").value);
+
+                        if (grade>=90) {
+                                alert("You got an A grade!");
+                        }
+                        else if (grade>=80) {
+                                alert("You got a B grade!");
+                        }
+                        else if (grade>=70) {
+                                alert("You got a C grade!");
+                        }
+                        else if (grade>=60) {
+                                alert("You got a D grade!");
+                        }
+                        else if (grade>=50) {
+                                alert("You got a P grade!");
+                        }
+                        else {
+                                alert("You got an F grade!");
+                        }
+                }
+        </script>
+</head>
+<body>
+        <h2>Check your grade</h2>
+        <form>
+                Enter your grade <input type="text" id="grade">
+                <input type="button" value="check" onclick="generateGrade()">
+        </form>
+</body>
+</html>
