@@ -1,0 +1,17 @@
+.top-header {
+        font-size: 30px;
+        font-weight: bold;
+}
+
+.featured-post {
+        border: 0px;
+}
+
+.pager>li>a.pager-older:hover {
+        background-color: aqua;
+        color: white;
+}
+
+.blog-head {
+        font-size: 35px;
+}
