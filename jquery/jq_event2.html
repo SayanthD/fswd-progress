@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>$(document).ready(function(){
+                $("#txt1").focus(function(){
+                        alert("focus on textbox1");
+                });
+                $("#txt2").blur(function(){
+                        alert("left from textbox2");
+                });
+                $("#txt3").change(function(){
+                        alert("change from textbox3");
+                });
+        });
+        </script>
+</head>
+<body>
+        <input type="text" id="txt1" placeholder="textbox1">
+        <input type="text" id="txt2" placeholder="textbox2">
+        <input type="text" id="txt3" placeholder="textbox3">
+</body>
+</html>
